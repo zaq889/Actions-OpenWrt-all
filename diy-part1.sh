@@ -26,4 +26,6 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 git clone https://github.com/ouyangzq/luci-app-cpe.git package/luci-app-cpe
 git clone https://github.com/ouyangzq/sendat package/sendat
+git clone https://github.com/zaq889/5G-Modem-Support.git package/5G-Modem-Support 
+rm -rf package/5G-Modem-Support/{rooter}
 ./scripts/feeds update -a && ./scripts/feeds install -a 
