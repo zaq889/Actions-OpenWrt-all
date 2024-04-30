@@ -23,3 +23,5 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
 git clone https://github.com/zaq889/5G-Modem-Support.git feeds/packages/5G-Modem-Support
+git clone https://github.com/animegasan/luci-app-dnsleaktest.git feeds/packages/luci-app-dnsleaktest
+git clone https://github.com/animegasan/luci-app-speedtest.git feeds/packages/luci-app-speedtest
