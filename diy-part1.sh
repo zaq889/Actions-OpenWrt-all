@@ -22,4 +22,4 @@ rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
-git clone https://github.com/zaq889/5G-Modem-Support.git feeds/packages
+git clone https://github.com/zaq889/5G-Modem-Support.git feeds/packages/
