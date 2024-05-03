@@ -17,4 +17,4 @@ sed -i 's/192.168.1.1/192.168.15.1/g' package/base-files/files/bin/config_genera
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i 's/ImmortalWrt/zaq889/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/zaq889/g' package/base-files/files/bin/config_generate
