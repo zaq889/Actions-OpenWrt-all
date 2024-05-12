@@ -14,18 +14,17 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
-./scripts/feeds update -a
-rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,store,taskd,xterm,quickstart}
+./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-git clone https://github.com/ouyangzq/luci-app-cpe.git package/luci-app-cpe
-git clone https://github.com/ouyangzq/sendat package/sendat
-git clone https://github.com/zaq889/5G-Modem-Support.git package/5G-Modem-Support 
-rm -rf package/5G-Modem-Support/rooter
-./scripts/feeds update -a && ./scripts/feeds install -a 
+./scripts/feeds install -a 
+git clone https://github.com/zaq889/5G-Modem-Support.git feeds/packages/5G-Modem-Support
+git clone https://github.com/animegasan/luci-app-dnsleaktest.git feeds/packages/luci-app-dnsleaktest
+git clone https://github.com/sirpdboy/luci-app-chatgpt-web.git feeds/packages/luci-app-chatgpt-web
+git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
+sed -i '3i # echo "0e8d 7127" >> /sys/bus/usb-serial/drivers/generic/new_id' package/base-files/files/etc/rc.local
+sed -i '3i # echo "0e8d 7127" >> /sys/bus/usb-serial/drivers/generic/new_id' package/base-files/files/etc/rc.local
