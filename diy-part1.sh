@@ -12,6 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+./scripts/feeds update -a && ./scripts/feeds install -a
 
 # Add a feed source
 #sed -i '1i src-git  kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
