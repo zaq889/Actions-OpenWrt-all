@@ -22,7 +22,7 @@ rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a 
-git clone https://github.com/zaq889/5G-Modem-Support.git feeds/packages/5G-Modem-Support
+git clone https://github.com/Siriling/5G-Modem-Support.git feeds/packages/5G-Modem-Support
 git clone https://github.com/animegasan/luci-app-dnsleaktest.git feeds/packages/luci-app-dnsleaktest
 git clone https://github.com/sirpdboy/luci-app-chatgpt-web.git feeds/packages/luci-app-chatgpt-web
 git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
