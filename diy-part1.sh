@@ -23,6 +23,5 @@ git clone https://github.com/sirpdboy/luci-app-chatgpt-web.git feeds/packages/lu
 git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedtest
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git feeds/packages/luci-app-adguardhome
 git clone https://github.com/sbwml/luci-app-mosdns.git feeds/packages/luci-app-mosdns
-rm -rf package/istore/
-git clone https://github.com/0xACE8/openwrt-quickstart.git feeds/packages/openwrt-quickstart
+
 
