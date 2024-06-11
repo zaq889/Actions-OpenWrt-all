@@ -61,6 +61,8 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
+        cp nx30pro_eeprom.bin openwrt/package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin
+        cp banner openwrt/package/base-files/files/etc/banner
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
