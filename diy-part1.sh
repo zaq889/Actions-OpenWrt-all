@@ -24,4 +24,4 @@ git clone https://github.com/sirpdboy/netspeedtest.git feeds/packages/netspeedte
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git feeds/packages/luci-app-adguardhome
 git clone https://github.com/sbwml/luci-app-mosdns.git feeds/packages/luci-app-mosdns
 cp ../nx30pro_eeprom.bin openwrt/package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/MT7981_iPAiLNA_EEPROM.bin
-
+cp ../banner openwrt/package/base-files/files/etc/banner
